@@ -1,4 +1,5 @@
-//===-- DebuggerIntrinsicFunctionsCount.h - Example Transformations ------------------*- C++ -*-===//
+//===-- DebuggerIntrinsicFunctionsCount.h - Example Transformations
+//------------------*- C++ -*-===//
 //===----------------------------------------------------------------------===//
 
 #ifndef LLVM_TRANSFORMS_UTILS_DEBUGGERINTRINSICFUNCTIONSCOUNT_H
@@ -10,11 +11,13 @@
 
 namespace llvm {
 
-class DebuggerIntrinsicFunctionsCountPass : public PassInfoMixin<DebuggerIntrinsicFunctionsCountPass> {
+class DebuggerIntrinsicFunctionsCountPass
+    : public PassInfoMixin<DebuggerIntrinsicFunctionsCountPass> {
 public:
   PreservedAnalyses run(Function &F, FunctionAnalysisManager &AM);
+
 private:
-  std::map< std::string, int> opcodeCounter;
+  std::map<std::string, int> opcodeCounter;
 };
 
 } // namespace llvm

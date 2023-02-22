@@ -1,4 +1,5 @@
-//===-- DebuggerIntrinsicFunctionsDelete.h - Example Transformations ------------------*- C++ -*-===//
+//===-- DebuggerIntrinsicFunctionsDelete.h - Example Transformations
+//------------------*- C++ -*-===//
 //===----------------------------------------------------------------------===//
 
 #ifndef LLVM_TRANSFORMS_UTILS_DEBUGGERINTRINSICFUNCTIONSDELETE_H
@@ -8,7 +9,8 @@
 
 namespace llvm {
 
-class DebuggerIntrinsicFunctionsDeletePass : public PassInfoMixin<DebuggerIntrinsicFunctionsDeletePass> {
+class DebuggerIntrinsicFunctionsDeletePass
+    : public PassInfoMixin<DebuggerIntrinsicFunctionsDeletePass> {
 public:
   PreservedAnalyses run(Function &F, FunctionAnalysisManager &AM);
 };

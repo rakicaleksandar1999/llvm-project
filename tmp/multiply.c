@@ -1,7 +1,7 @@
 int mult() {
-	int a =5;
-	int b = 3;
-	int c = a * b;
-	a = b+5;
-	return c;
+  int a = 5;
+  int b = 3;
+  int c = a * b;
+  a = b + 5;
+  return c;
 }
